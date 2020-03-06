@@ -32,7 +32,7 @@ function getMyHours() {
   return `${n} часов`;
 }
 
-// Попробуй переписать этот метод по аналогии альтернативным вариантом getMyHours, не используя перечисление
+// Попробуте переписать этот метод по аналогии с альтернативным вариантом getMyHours, не используя перечисление
 function getMySeconds() {
   // 55 секунды -> 55 секунд
   // 60 секунд не бывает - от 0 до 59
@@ -42,10 +42,15 @@ function getMySeconds() {
 }
 
 function myDateRussian() {
+  // 1 минут[а], 2 минут[ы], 5 минут[] - нужно по аналогии с секундами и часами сделать функцию, которая будет возвращать верную форму слова.
   alert('Сегодня ' + myDate.getDate() + ' ' + getRussianMonth() + ' ' +   myDate.getFullYear() + ' ' + 'года, ' + getRussianDay() + ', ' + getMyHours() + ' ' + myDate.getMinutes() + ' минут ' + getMySeconds() );
+
+  // В таких конструкциях очень рекомендую задавать строки с использованием таких `` кавычек
+  // Подробнее про них можно почитать тут:
+  // https://learn.javascript.ru/string
+  //
+  // Тогда запись будет выглядеть локаничнее:
+  // alert(`Сегодня ${myDate.getDate()} ${getRussianMonth()} ${myDate.getFullYear()} года, ${getRussianDay()}, ${getMyHours()} ${myDate.getMinutes()} минут ${getMySeconds()}`);
 }
 
-//    const timeFormat = {hour: 'numeric', minute: 'numeric'};
-// const dateFormat = {year: 'numeric', month: 'short', day: 'numeric'};
-
-// myDateRussian();
+myDateRussian();
