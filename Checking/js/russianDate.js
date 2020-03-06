@@ -32,7 +32,7 @@ function getMyHours() {
   return `${n} часов`;
 }
 
-// Попробуте переписать этот метод по аналогии с альтернативным вариантом getMyHours, не используя перечисление
+// Попробуйте переписать этот метод по аналогии с альтернативным вариантом getMyHours, не используя перечисление
 function getMySeconds() {
   // 55 секунды -> 55 секунд
   // 60 секунд не бывает - от 0 до 59
@@ -49,7 +49,7 @@ function myDateRussian() {
   // Подробнее про них можно почитать тут:
   // https://learn.javascript.ru/string
   //
-  // Тогда запись будет выглядеть локаничнее:
+  // Тогда запись будет выглядеть лаконичнее:
   // alert(`Сегодня ${myDate.getDate()} ${getRussianMonth()} ${myDate.getFullYear()} года, ${getRussianDay()}, ${getMyHours()} ${myDate.getMinutes()} минут ${getMySeconds()}`);
 }
 
